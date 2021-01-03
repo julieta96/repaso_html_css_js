@@ -1,0 +1,22 @@
+
+*{
+	padding:0;
+	margin: 0;
+}
+
+
+.contact-form{
+ font-size: 20px; /*yo aca le estoy dando el valor incial del h2 que esta dentro de este contenedor, sino x defecto tendra 16px
+                 siempre hablando de la medida y utilizacion del em*/
+                 /*funciona para cualquier propiedad que trabje con medidas*/
+ background-color:#000;
+ width: 50vw; /*ocupa el ancho de la pantalla dependiendo la medida que le demos , si es 100 ocupa el 100% si el 50 la mitad del ancho*/ 
+ height: 100vh; /*ocupa el 100% de alto de una pantalla*/
+ /*cuando se trabaja con porcentajes , se trabjaba con el porcentaje de la caja que lo contiene y no de la pantalla*/
+}
+
+/*.contact-form__h2{
+
+	font-size: 5em; /*cm-mm-pt-%*/ /*si le damos 5 em al font del h2 que eta dentro del contact-form entonces su valor sera 100px
+	               xq hacemos 20*5=100px*/
+/*}*/
