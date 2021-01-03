@@ -1,0 +1,44 @@
+/*h2{
+	/*display: inline;*/
+	/*height: 400px;
+	width: 190px;
+	padding: 10px;*/
+/*}*/
+
+/*p{
+
+    height: 400px;
+	width: 190px;
+	padding: 10px;
+
+}*/
+
+h2{
+	background-color: red;
+	display: inline-block;/*para q se comporte como un elemento en linea y pueda acceder a loas propiedades de un bloque*/
+	padding: 100px;/*distancia entre el texto y la caja*//*top-bottom, l-r*//*t-r-b-l*/
+	/*si no defdino el caurto valor tendra el mismo valor del right*/
+	/*height: 100px;
+	width: 300px;*/
+  /*box-sizing: content-box;*//*si queremos  se mantrenga los 100px y q no salga de la caja el contenido usamos esta propiedad*/
+    box-sizing: border-box;/*sino usamos esta*/
+    text-align: center;
+    margin: 10px;/*distancia entre 2 cajas o cajas*/
+    border-radius: 2em;
+    border:10px solid orange;
+    box-shadow:30px 20px 10px 10px #000 ;/*da sombra  a la caja*/
+    /*eje x-eje y - tamño del densefoque tamaño de sombra - borde -color*/
+    text-shadow: 2px 2px 7px #fff/*, 2px 2px 7px #fff*/
+    /*podemos duplicar las medidas con coma y se hace mas intenso el color de la sombra*/;
+    /*este no contiene border para el texto*/
+    transform: rotate(90deg);/*para que el elemento rote a 90grados o el grado q uno quiera*/
+    
+}
+
+/*box model: modelo en el q trabjamos las cajas,content,padding , boder y margin 
+estas propiedades forman en conjunto el boxmodel y tiene un rango de jerarquia y cada uno se aplica
+x encima de otro */
+/*el content es lo q tenemos en el texto y  lo modificamos con line-height*/
+/*la forma de modificar el padding es el padding*/
+/*la forma de modificar el border es la porpiedad border y margin utilizamos margin*/
+
