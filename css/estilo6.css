@@ -1,0 +1,22 @@
+*{
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+
+.contact-form{
+ font-size: 25px;
+}
+
+
+.contact-form__h2{
+
+	font-size: 2em;
+	/*font-family: sans-serif;*/
+	/*line-height:1.9;*/ /*espacio total que ocupa una letra , el line height nace del centro de la letra
+	1 line hright = 1/2 tamaño de la letra hacia arriba + 1/2 hacia abajo*/
+	/*font-weight:700 ;*/
+	/*font-stretch:normal; ;
+	font-variant: small-caps;*/
+    color: red
+}
