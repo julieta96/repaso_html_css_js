@@ -1,0 +1,51 @@
+/*aca funciona como cascada*/
+
+/*h1{
+	color: red;
+}
+
+h1{
+	color: blue;
+}*/
+
+/*aca funciona dependiendo la jerarquia*/
+
+#cambialo{
+	color: yellow; /*el id tiene mas jerarquia que las clases*/
+}
+
+.cambio{
+	color: red; /*por que las clases estan x encima de los elementos, no importa lo que viene despues*/
+}
+
+/*h1{
+	color: blue;
+}
+
+.cambio{
+	color: green; /*queda en green xq esta en una misma jerarquia, estoy seleccionando una misma clase 2 veces*/
+/*}*/
+
+/*[hi="cambialo"]{
+	color: yellow; /*queda en amarillo xq los atributos estan en una misma jerarquia junto con las clases y pseudo-clases ,
+	 no entran en conflicto xq estan en el mismo nivel de cascada, el que viene ultimo (cambio) es el q queda*/
+/*}*/
+
+h1{
+	color: green !important;/*no importa si es una clase, id atributo, mientras se ponga !important no va a suceder ningun cambio*/
+}
+
+/*especificacion -nivel de jerarquia*/
+
+/*!important
+----------------
+estilos en linea
+---------------
+identificadores
+-------------
+clases
+pseudo-clases
+atributos
+--------
+elementos
+pseudo-elementos*/
