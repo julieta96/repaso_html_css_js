@@ -1,0 +1,50 @@
+/*estrucutura css*/
+
+/*
+
+selector{
+	
+	propiedad : valor;
+}
+
+selector:los elementos  o conjunto de elementos que queremos cambiar
+propiedad: borde color,etc
+
+tipos de selectores:
+-universal:* es el selecciona todos los elemetnos de la pagina;
+-de tipo :son los que se selecciona por elemento o sea button,input , h2,etc(nombre de los elementos, las etiquetas);
+-clases agregar atributo clases a las etiquetas y se utiliza un punto para llamarlo
+-id se utiliza el hashtag para modificar un id 
+-por atributo para llamar por atributo colocamos corchetes y atributo igual a su valor :[type="text"];
+-descendiente : le decimos que queremos modificar el elemento que esta dentro de otro*/
+
+/*h2 p{
+	color: red;
+
+}*/
+
+/*o*/
+
+/*.h2-class p{
+  
+  color: green;
+}
+*/
+/*-----------------------ABOUT ESPECIFICACION--------------------*/
+h2 b{
+	color: red;
+
+}
+
+h2 b span{
+	color: blue;
+
+}
+
+
+/*-pseudo-clases : EJEMPLOS ACTIVE , HOVER ,ETC, son como eventos de la seleccion*/
+b:hover{
+  color: yellow;
+}
+
+/*forma de cambiar los elementos que no afecten al resto, esto todo cuestion de preoridades, jerarquias*/
