@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo9.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+</head>
+<body>
+ <!--
+   position valores
+
+   -static = valor por defecto , es como none quiere decir q no esta posicionado
+
+   -relative= mantiene su espacio en pantalla,conserva el espacio no lo pierde, putno de referncia es el mismo
+   o sea el right es el right de la caja , left left , bottom bottom , top top
+   y adquiere otra propiedad llamada z-index(la forma de poner un elemento sobre otro)
+   en el eje z los ordena quien tiene una valor mas alto va a estar adelante de nuestra vista en el eje z
+   el valor mas alto de z-index va a estar adelante
+   *el z-index tiene un conflicto en padre e hijo
+
+   -absolute= no conserva el espacio, sino definimos l-r-t or b
+   posiciona a partir del contenedor entonces punto de referencia caja contenedora,
+   y si lo definimos se posiciona en el viewport
+   sino defincimos height y width a los hijos del contenedor
+   se van a ajustar al ancho del contenedor
+   si el contenedor esta posicionado lo puede tener como punto de referencia
+   el tamño del bloque se va a ajustar al tamaño del contenido
+
+   -fixed= igual q absolute pero queda fijado
+
+   -sticky= mezcla de relative y fixed, conserva el espcio del elemento dentro del dom
+
+   cuando le damos posicion a un elemento esta adquriendo 4 propiedades nuevas
+   -top
+   -bottom
+   -right
+   -left
+ 
+ top y left son las propiedades mas importantes si no usamos top y left las propiedades right y bottom funcionan
+
+
+ -->
+  <!-- <div class="contenedor">
+       <div class="caja1">caja1</div>
+       <div class="caja2">caja2</div>
+       <div class="caja3">caja3</div>
+       <div class="caja4">caja4</div>
+       <div class="caja5">caja5</div>
+ 
+   </div>-->
+
+ 	
+
+ <!-- <div class="contenedor">
+
+ 	   <div class="hijo"></div>
+
+    </div>
+
+ -->
+
+ <div class="caja-fixed">
+ 	
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. 
+
+ </div>
+ <div class="texto">
+ 	
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+ </div>
+
+
+
+</body>
+</html>
