@@ -1,0 +1,18 @@
+/*.div input{ en vez de llamar asi , podemos hacerlo de la siguiente forma
+
+}*/
+
+.form__input{
+
+	color:blue;
+}
+
+/*.form__input:first-child{
+
+  color: red;
+}* o´*/
+
+.form__input--active{ /*con -- le estamos diciendo que el input va a ser especial, tener una funcion diferente*/
+
+  color: red;
+}
