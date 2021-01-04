@@ -1,0 +1,97 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+
+}
+
+.texto{
+
+	padding: 20px;
+}
+
+.texto::first-line /*se refiere a la 1era linea*/{
+
+	/*color: blue;
+	font-size: 2em*/
+
+}
+
+.texto::first-letter /*se refiere a la 1era letra*/{
+
+	/*color: blue;
+	font-size: 10em*/
+
+}
+
+form {
+
+	margin: 100px auto;
+	display: black;
+	background: #555;
+	padding: 100px;
+	width: 50%;
+}
+
+input{
+	padding: 6px;
+	width: 100%;
+}
+
+input::placeholder{
+	/*color: red;
+	background: yellow;*/
+}
+
+
+input::selection{
+	color: red;
+	background: yellow;
+}
+
+div{
+
+	margin: 100px auto;
+	display: black;
+	background: #666;
+	padding: 100px;
+	width: 50%;
+}
+
+
+p{
+	padding: 6px;
+	width: 100%;
+}
+
+
+p::selection{
+	color: #fff;
+	background:#000;
+}
+
+
+b{
+
+	padding: 6px;
+	width: 100%;
+
+}
+
+
+b::before{
+
+	content: "me suscribi ";
+	color:#fff;
+
+}
+
+
+b::after{
+
+	content: " www.youtube.com/....";
+	color:red;
+	background: #621
+
+}

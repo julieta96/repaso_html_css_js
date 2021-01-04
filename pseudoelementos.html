@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pseudo elementos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo13.css">
+</head>
+<body>
+<!---
+
+	es un elmento que no es un elmento , es decir, que no fomra parte del dom, vemos cambios visuales pero no afectan al dom.
+
+   /*funciona en block, inline-block,etc pero no en inline*/
+	::first-line (block)
+	::first-letter (block)
+
+	::placeholder para modificar las propiedades del placeholder sea el color del texto o el fondo,etc
+
+    --hijos del elemento q vamos a usar , funciona para elementos inline y block
+	::after (hijos - content (necesario)-inline )
+	::before (hijos - content (necesario)-inline )
+	--
+
+	::selection se comporta como un elemtno inline por lo q no se le puede dar un padding , height,etc
+	pero si color,background entre otras
+
+
+	los elemetnos q refieran de la etiqueta content no forman parte del dom
+-->
+  <!--- 
+   <div class="texto">
+
+   	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   	
+   </div>
+
+   -->
+<!--<form>
+  <input type="text" placeholder="Ingrese su nombre">
+</form>-->
+<!--<div>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>-->
+
+<div>
+	<b>a</b>
+</div>
+</body>
+</html>
