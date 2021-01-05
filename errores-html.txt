@@ -1,0 +1,7 @@
+           
+            error comunes en html a tener en cuenta
+
+
+-- no usar html para darle color o estilos a la web es solo con css
+-- no usar etiquetas obsoletas
+--modulacion, separar contenido, lenguaje no usar etiquetas styles o script , separar por modulo 
