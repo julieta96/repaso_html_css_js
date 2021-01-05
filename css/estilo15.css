@@ -1,0 +1,30 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+
+}
+
+
+.caja{
+
+	margin: 25px;
+	width: 300px;
+	height: 400px;
+}
+
+
+.caja img{
+
+	height: 100%;
+	width: 100%;
+	border: 2px solid red;
+	/*object-fit: contain;*/
+	object-fit: scale-down;
+
+	/*scale-down se queda con la resolucion mas chica 
+	, si none es mas chica q contain dejo esa
+	cualquiera de las dos q sea mas chica ,
+	 se queda con el valor / resolucion mas bajo*/
+}
