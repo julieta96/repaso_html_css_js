@@ -1,0 +1,107 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+
+}
+
+
+
+.caja1{
+
+	width: 200px;
+	height: 200px;
+	background: slateblue;
+	/*transition: background 1s , height 0.2s , width 1s;*/
+	/*o si queremos todo en 1s remplazamo lo escrito por all 1s*/
+	transition: all 1s , border .5s;
+	border: 3px solid red;
+
+}
+
+.caja1:hover{
+
+	background: darkslateblue;
+	height: 300px;
+	width: 300px;
+	/*permite cambiar la velocidad 
+	en la q ocurre las transicciones,
+	principalmente en el hover*/
+	border-color: blue;
+}
+
+
+.caja2{
+
+	margin: 30px;
+	display: block;
+
+}
+
+
+.caja2:hover{
+
+	background: slateblue;
+	color:#000;
+}
+
+a:link{
+ /*si no esta visitado este enlace le damos color red*/
+	/*si la pagina no existe no queda en  rojo, solo si existe cambia el color*/
+	color:red;
+}
+
+a:visited/*todo lo q ya visito se pone en violeta*/{
+
+	color: violet;
+}
+
+/*los visited y lik  , tienen mucha mas prioridad q el color green
+o al menos q le demos !important y siempre las a  van a estar green*/
+
+a{
+	color:  green !important;
+}
+
+
+.caja{
+
+	width: 250px;
+	height: 250px;
+	background: red;
+	margin: 25px;
+	transition: all 1s;
+
+}
+
+
+.caja:active{
+	background: blue;
+	width: 600px;
+
+}
+
+input{
+
+	margin: 25px;
+	transition: background .4s , padding .4s;
+}
+
+
+input:focus{/*cuando damos click y seleccionamos el elemento*/
+
+    background: lightgrey;
+    padding: 20px;
+
+}
+
+/*.caja3 b*/:lang(es){ /*lang es una funcion , y hay que pasarle por parametro el lenguaje al que le queremos cambiar los estilos*/
+    
+background: red;
+padding: 20px;
+
+
+
+
+}
