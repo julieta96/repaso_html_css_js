@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>grid</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+</head>
+<body>
+	<!---------------
+                  GRID
+                  es un estilo de layout , una forma en la que vamos a trabajar con layout,
+                  es un valor de la propiedad display, trabajamos en el layout a traves de grillas
+
+          •CONCEPTOS BASICOS
+
+          -grid container (contenedor completo)
+          -grid item (cada elemento que forma parte de la grilla)
+          -grid cell (cada una de las divisiones)
+          -grid tracks(column y row)
+          -grid area (areas que seleccionamos , tienen q ser consecutivas tanto como vertical y hozidental)
+          -grid line(column line y row line)
+
+
+          ----------------------
+
+          •PROPIEDADES
+
+          -grid-template-row (grid container)
+          -grid-template-column (grid-container)
+
+          -grid-row-gap (grid container) margin entre celdas , la distancias que hay entre una celda y otra
+          -grid-column-gap (grid container)
+          -grid-gap: row column (grid container)
+
+
+          -grid-column
+          -grid-row
+          -grid-column-start
+          -grid-column-end
+          -grid-row-start
+          -grid-row-end
+
+          •UNIDADES
+          -AUTO 
+          -FR (se comporta como wrap/flex hace que la grilla sea dinamica y no estica al achicar la pantalla)
+
+          -------
+          -SPAN(LE DECIMOS QUE OCUPE TANTA CANTIDAD DE COLUMNAS)
+          ----
+
+          repeat(cantidad,tamaño/s)
+          ej:
+          repeat(2,150px)
+          repite dos veces 150px
+
+          o
+
+          repeat(2,150px 1f)
+          repide dos de 150px y dos de 1fr
+          150px 150px 1fr 1fr
+
+		--------------->
+
+
+		<div class="grid-container">
+
+			<div class="grid-items">1</div>
+			<div class="grid-items">2</div>
+			<div class="grid-items">3</div>
+			<div class="grid-items">4</div>
+			<div class="grid-items">5</div>
+			<div class="grid-items">6</div>
+			<div class="grid-items">7</div>
+			<div class="grid-items">8</div>
+			<div class="grid-items">9</div>
+		</div>
+
+
+</body>
+</html>
