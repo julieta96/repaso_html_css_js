@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+</head>
+<body>
+  <!---------
+     
+     nueva forma de maquetar.
+     menos vulnerable,mas seguro, menos problemas,mas rapido de hacer ,mas dinamico y es mas optimo
+
+     flex requiere de 2 cosas: flex conteiner y flex item(solo hijos directos, solo los hijos del elemento)
+
+     el continer es el que va a conterner esos items,que van a estar contenido por el contenedor flex
+     si le damos display flex a cualquier elemento se comporta como un bloque, cmo un display block
+     vamos a notar los cambios adentro del contenedor, los items que esten adentro del contenedor
+
+     flexbox tiene 2 ejes, tiene un inicio y final direcciones a doinde va a apuntar
+
+     cross axis(y) cross- start/cross - end
+
+     main axis(X) main-start/main-end
+     
+     flex direction= cambia la direccion 
+     del main-axis, e suna propiedad de conteiner para afecta<r a los items pero se le aplica al contenedor
+     *valores:
+
+     -column
+     -row
+     -column-reverse
+     -row-reverse
+     ---------
+
+     PROPIEDADES PARA FLEX CONTENT
+
+     flex wrap = a las cajas proximas cajas q se añaden las va agregando abajo
+     *valores:
+     -wrap(se añade abajo)
+     -wrap-reverse(se añade arriba)
+     -no-wrap(valor por defecto, no sucede nada )
+
+     flex-flow= flex-direction flex-wrap
+     (para poner esas 2 propiedades en una)
+     ej: flex-direction: column 
+         flex-wrap: wrap
+         entonces a eso lo puedo poner en una sola propiedad, asi:
+         flex-flow: column wrap
+
+         ALINEACION EN FLEX
+         
+        /*Alineacion MAIN AXIS*/
+
+        justify-content= 
+         -center
+         -space-around(es como un margin auto, pero depsues se le puede dar margin a los items)
+         -space-between (le da un margen automatico a las cajas)
+         -space-evenly(main axis)
+         (le da un margin a todas los items por igual sea margen del principio y final)
+
+         /*ALINEACION CROSS AXIS*/
+
+         align-items:
+         (se utiliza cuando hay una linea de items q son flex items)
+         -flex-start(los acomoda al principio)
+         -center (los centra)
+         -flex-end (los deja abajo)
+         -stretch(propiedad x defecto , le da un height q se estira a todo lo largo del cross axis,pero si usamos flex-start evitamos eso)
+         -baseline(cross axis)(funciona como el flex-start)(se puede utilizar cuando tenemos un wrap-reverse, y queremos acomodar abajo xq con el flex endno funciona)
+
+
+         align-content:
+         (se utiliza cuando hay mas de una
+         linea)
+         -mismos valores q align items
+---------------------------------------------
+
+       PROPIEDADES PARA FLEX ITEMS
+
+       align-self:
+       -center
+       -flex-end
+       -flex-start
+       -baseline
+
+       FUNCIONAMIENTO DEL MARGIN
+
+       margin-(irection):auto ->margin = contendor - tamaño de la caja en el eje que corre(direction)
+
+       flex-grow= agarra el espacio sobrante y lo reparte entre las cajas que quedan
+       si el espacio q queda es de 300px 
+       120+100=220 , entonces cada caja va a tener 220 x q es el espacio q sobra
+       si se lo asigno a una sola caja esa caja se va a llevar todo el espacio sobrante
+
+       flex-basis= es como el width , pero la diferencia es que especial de flex, si a una caja le pongo width y ademas tabmien el flex-basis le va a dar mas importancia al flex-basis
+
+       flex-shrink= es para decirle q espacio ocupa cada caja, q caja va a ceder mas espacio, cuando no haya espacio disponible(main axis)
+
+       flex:flex-grow , flex-shrink , flex-basis
+       (al menos le primer parametro obligatorio)
+       agrupa valores de varias propiedades
+
+       order = como el z index , pero en el eje en el que apunte el main axis, cambia el orden de las cajas
+
+  	---------------->
+
+
+  	<div class="flex-container">
+  		<div class="flex-items orange">
+  			caja flexible
+  		</div>
+  		<div class="flex-items">
+  			caja flexible
+  		</div>
+  		<div class="flex-items green">
+  			caja flexible
+  		</div>
+
+  	</div>
+</body>
+</html>

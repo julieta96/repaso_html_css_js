@@ -1,0 +1,55 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+
+}
+
+
+.flex-container{
+
+	display: flex;
+	/*flex-direction: column-reverse;*/
+	/*flex-wrap: wrap;*/
+	justify-content: space-evenly;
+	height: 100vh;
+	/*align-items: baseline; */
+	/*align-content: baseline;*/
+}
+
+
+.flex-items{
+
+	background: #48e;
+	color: #fff;
+	margin: 5px;
+	width: 120px;
+	text-align: center;
+	min-width: 150px;
+	height: 100px;
+	/*flex-grow: 1;*/
+	flex: 1;
+}
+
+.orange{
+	background: orange;
+	/*flex-grow: 2;*/
+	flex: 1 0 350px;
+	order: 4;
+}
+
+.green{
+
+	background: green;
+	/*align-self: baseline;*/
+	/*con margin-left/right/top/bottom podemos posicionar las cajas
+	pero funciona de forma contraria ej:
+	si le damos margin-top la caja va hacia arriba
+	si le damos eso mas margin-bottom se centra porque entra en conflicto
+	y no sabe donde posicionarse,se centra verticalmente
+	con margin-left y right auto se centra en el medio
+	margin 0 auto se centra hacia arriba*/
+
+	/*flex-grow: 1;*/
+}
