@@ -1,0 +1,35 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+
+}
+
+
+body{
+
+	background: radial-gradient(circle , #fff , #ccc);
+	padding: 15px;
+}
+
+
+.grid-container{
+	border: 3px solid #000;
+	display: grid;
+	grid-gap: 20px;
+	/*grid-template-columns:repeat(3,minmax(100px,300px));*/
+	/*grid-template-columns:repeat(auto-fill ,minmax(120px,1fr) );*/
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+	background: #333;
+	grid-auto-flow: dense;
+	
+
+}
+
+.grid-items{
+
+	border: 1px solid #000;
+	background: #999;
+}
+
