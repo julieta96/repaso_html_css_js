@@ -1,0 +1,56 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+.container{
+
+  background: #86f;
+  padding: 20px 5px;
+}
+
+
+.caja{
+	background: #025;
+	height:80px;
+	width:80px;
+	margin: 20px;
+	animation-name: desplazarse;
+	animation-duration: 2s;
+	position: relative;
+	animation-iteration-count:infinite ; 
+	animation-direction:alternate;
+	animation-fill-mode: none;
+	animation-timing-function: cubic-bezier(0.04,1.08.0.76,1.11);
+
+}
+
+
+@keyframes desplazarse{
+
+	/*from*/0%{
+
+		/*propiedades que tiene la caja cuando comienza*/
+
+		
+		left: 0;
+		background: #025;
+
+	}
+
+	50%{
+		background: red;
+	}
+
+	/*to*/100%{
+		/*cuando termina*/
+
+		left:80%;
+		background: green;
+	}
+
+}
