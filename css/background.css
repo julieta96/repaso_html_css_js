@@ -1,0 +1,26 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+.container{
+
+  background: #398;
+  padding: 30px;
+  height: 200px;
+  margin: 40px 0;
+  background-image: url(https://tecnovortex.com/wp-content/uploads/2019/04/wallpaper-engine.jpg);
+  background-size:cover /*contain*/;
+  background-repeat: no-repeat /*repeat*/ ;
+  /*background-clip: content-box*//*recorta desde donde va a mostrar la imagen cual va a ser el clip se va a mostrar*/;
+ /* background-origin:content-box;*//*crea  la imagen a partir de padding o borde,etc*/;
+  border: 10px solid red;
+ /* background-position: right top;*/ /*acepta dos valores*/
+ background-attachment: /*scroll*/fixed;
+
+
+}
