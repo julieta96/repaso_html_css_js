@@ -1,0 +1,59 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+.container{
+
+  background: #86f;
+  padding: 20px 5px;
+}
+
+
+.caja{
+	background: #025;
+	height:80px;
+	width:80px;
+	margin: 20px;
+	animation-name: desplazarse;
+	animation-duration: 3s;
+	position: relative;
+	/*animation-timing-function: como se va desplazar la animacion;*/
+	animation-iteration-count:3 /*infinite*/; /*cuantas vecs se va a repetir la animacion*/
+	animation-direction: /*normal*/ /*valor por defecto*/ /*reverse*/alternate/* funciona cuando el animation-iteration-count
+	es mayor a 1*//*alternate-reverse*/;
+	animation-fill-mode: none/*vuelve a la normalidad*/ /*backwards *//*forwars se queda como le dijimos en el 100%*/
+	/*both en caso de q le demos un delay arranca con la propiedad q le damos al principio de la animacion*/
+	 /*define como va a ser el modo final de la animacion*/;
+
+}
+
+
+@keyframes desplazarse{
+
+	/*from*/0%{
+
+		/*propiedades que tiene la caja cuando comienza*/
+
+		
+		left: 0;
+		background: #025;
+
+	}
+
+	50%{
+		background: red;
+	}
+
+	/*to*/100%{
+		/*cuando termina*/
+
+		left:80%;
+		background: green;
+	}
+
+}
