@@ -1,0 +1,57 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+.container{
+
+  background: #86f;
+  padding: 20px 5px;
+}
+
+
+.caja{
+	background: #025;
+	height:80px;
+	width:80px;
+	margin: 20px;
+	display: flex;
+	color: #fff;
+
+	/*mueve el elemento de un lado a otro*/
+
+	/*transform: translateX(100%);*/
+	/*transform: translateY(-100%);*/
+	/*transform: translate(100px,100px);/*(ejeX,ejeY)*/
+
+	/*modifica la medida del elemento*/
+
+	/*transform: scale(2);*//*si ponemos 1 es el tamño original , con 2 es el doble de grande y asi..*/
+	/*0.5 o 1.5 es un poco mas chico*/
+	/*transform: scaleY(1.5);*//*se estira en eje y*/
+	/*transform: scaleX(2);*//*DOBLE EN X*/
+    transition: transform 1s;
+    transform: skew(30deg);
+
+	
+}
+
+.caja:hover{
+
+/*transform: scaleX(2) translate(40px);*/ /*le podemos dar mas de 2 propiedades*/
+
+/*cambia la forma del elemento*/
+/*transform: skew(30deg); *//*deg son grados*/ /*rad radianes*/ /*grad gradianes*/
+
+}
+
+b{
+
+	margin: auto;
+	 transform: skew(-30deg);/*para q no se doble el texto*/
+}
+
