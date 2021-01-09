@@ -1,0 +1,81 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+
+.container{
+
+  
+  background: #86f;
+  padding: 20px 5px;
+}
+
+
+.caja{
+	background: #025;
+	height:80px;
+	width:80px;
+	transition-property: left , background;
+	transition-duration: 3s , 3s;
+	/*transition-delay: 3s;*/
+	margin: 20px;
+	position: relative;
+    left: 0;
+	
+
+}
+
+
+.container:hover >.caja{
+	left:80%;
+	background: #fff;
+}
+
+
+/*.caja:hover{
+
+	
+	left: 80%;
+}*/
+
+.caja:first-child{
+
+ transition-timing-function:linear;
+ /*va a la misma velocidad*/
+	
+}
+
+.caja:nth-child(2){
+
+	 transition-timing-function:ease;
+	 /*aranca con todo y despues va despacio*/
+
+}
+
+.caja:nth-child(3){
+
+	 transition-timing-function:ease-in;
+	 /*arranca despacio y termina con todo*/
+
+}
+
+.caja:nth-child(3){
+
+	 transition-timing-function:ease-out;
+	 /*arranca rapido y termina despacio , peros se toma mas tiempo*/
+
+}
+
+.caja:nth-child(5){
+
+	 transition-timing-function:ease-in-out;
+
+	 /*arranca despacio acelera y termina despacio */
+
+}
+
