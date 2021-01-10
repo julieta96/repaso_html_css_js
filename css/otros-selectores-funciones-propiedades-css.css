@@ -1,0 +1,27 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+   scroll-behavior: smooth;/*efecto de scroll suave*/
+}
+
+.container{
+ 
+	padding: 20px;
+	background: #59f;
+	font-size: 20px;
+	direction: rtl;
+	letter-spacing: 10px;
+
+}
+
+
+#container{
+
+	background: red;
+	user-select: none;
+
+
+}
