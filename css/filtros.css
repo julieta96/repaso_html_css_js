@@ -1,0 +1,25 @@
+*{
+
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 0;
+
+}
+
+div{
+	filter: /*blur(10px);*//*desenfoca la imagen*//*no aplica %*/
+			/*brightness(10);*/
+			/*contrast(3);*/
+			/*drop-shadow(10px 10px 5px #000);*//*a las imagenes transparentes les da sombra*/
+			/*contrast(3) brightness(10);*/ /*se puede poner mas de 1 valor*/
+			/*grayscale(1);*/ /*se puede usar%*/
+			/*hue-rotate(40deg); *//*rota la gama de colores usa grados y radianes*/
+			/*invert(); *//*invierte los colores*/
+			/*opacity(0.5);*/
+			/*saturate(400%);*/
+			/*sepia(1);*/
+
+
+
+}
