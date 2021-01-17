@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM (DOCUMENT OBJECT MODEL)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/dom.css">
+</head>
+<body>
+
+
+	<!--------------------------------------------------------------------------------------------------
+
+		es un documento que contiene todos los elementos del html + los estilos
+
+		nodo: un nodo en el dom es cualquier etiqueta del cuerpo, como un parrafo, el mismo body
+		o incluso las etiquetas de una lista 
+
+		 *tipos de nodos:
+
+		   -document = el nodo document es el nodo raiz,  a partir del cual derivan el resto de nodos
+
+		   -element = nodos definidos por etiquetas html
+
+		   -text = el texto dentro de un nodo element se considera un nuevo nodo hijo de tipo text (texto)
+
+		   -attribute = los atributos de las etiquetas definen nodos, (en javascript no los veremos como nodos , sino como informacion asociada al nodo de tipo element)
+
+		   -comentarios y otros = los comentarios y otros elementos como las declaraciones doctype en cabecera de los documentos html generan todos
+
+		 ---metodos de seleccion de elementos---
+
+		 -document.getElementById() selecciona un elemento por id
+
+		 -document.getElementsByTagName()  selecciona todos los elementos que coincidan con el nombre de la etiqueta especificada
+
+		 -document.querySelector() devuelve el primer elemento q coicnida con el grupo especificado de seleccion
+
+		 -document.querySelectorAll() devuelve todos los elementos que coincidan con el grupo especificado
+
+		 ---metodos para recibir ,obtener eliminar valores de atributos---
+
+		 -setAttribute() modifica el valor de un atributo 
+
+		 -getAttribute() obtiene el valor de un atributo
+
+		 -removeAttribute() remueve el valor de un atributo
+
+          *no se puede usar mas de un id x problema de espeficidad
+ y otro por problema como estos cuando trabajamos con javascript solo se puede seleccionar un solo id sino podemos tener problemas	
+
+ ---atributos globales--
+
+ class = lista de clases del elemento separadas por espacios
+ contenteditable = indica si el elemento puede ser modificable para el usuario (bool)
+ dir = indica la direccionalidad del texto
+ hidden = indica si el elemento aun no es , o ya no es , relevante
+ id = define un identificador unico
+ style = contiene declaraciones de estilos
+ tabindex = indica si el elemento puede obtener un focus de input
+ title = contiene un texto con informacionrelacionada al que pertenece
+
+ --atributo style--
+ -propiedades camel case
+
+ --atributos de inputs--
+
+ className
+ value
+ type
+ accept
+ form
+ minlength (minimo de caracteres q debe tener )
+ placeholder
+ required
+
+ --clases , classList y metodos de classList--
+
+ add() añade una clase
+ remove() remueve una clase
+ item() devulve la clase del indice especificado
+ contains() verifica si ese elmento posee o no la clase especificada
+ replace() reemplaza una clase por otra
+ toggle() si no tiene la clase especificada, la agrega si ya la tiene , la elimina
+
+ ---obtencion y modificacion de elementos--
+
+ textContent devuelve el texto de cualquier nodo
+ innerText devuelve el texto visible de un node element
+ outerText devuelve el texto q se encuentra en las etiquetas html
+
+ innerHTML devuelve el contenido html de un elemento
+ outerHTML devuelve el codigo HTML completo del elemento
+
+ --creacion de elementos--
+
+ createElements()
+ appendChild()
+ createDocumentFragment()
+ createTextNode()
+
+ --obtencion y modificiacion de child (hijos)--
+
+ firstChild
+ lastChild
+ firstElementChild
+ lastElementChild
+ childNodes devuelve todos los nodos hijos
+ children
+
+ --metodos de childs (hijos)--
+
+ appendChild()
+ replaceChild()
+ hasChildNodes()
+
+ --propiedades de padres--
+
+ parentElement //
+ selecciona el padre elemento del elemento
+ parentNode //seleccion el padre de un elemento
+
+
+--propiedades de siblings--
+
+nextSibling
+previousSibling
+nextElementsSibling
+previousElementsSibling
+
+nodos - extras
+
+closet()
+
+
+ ---------------------------------------------------------------------------------------->
+
+ <!--<p id="parrafo" class="texto">Esto es un parrafo</p>
+
+<input type="range" class="rango">
+<label>rango edad</label>-->
+
+<!--<h1 class="titulo" title="titulo normal" hidden="">TITULO</h1>
+<br> <br>
+
+<a href="" class="atitulo" tabindex="3">titulo a</a>
+<a href="" class="atitulo" tabindex="2">titulo a</a>
+<a href="" class="atitulo" tabindex="1">titulo a</a>
+<br> <br>-->
+
+<!--<input type="text" class="input-normal" name="">
+<br> <br>-->
+
+<!--<form id="formulario">
+	<input type="text"  class="input2 input-normal">
+	<input type="submit" name="">
+</form>-->
+<!--<input type="submit" name="" form="formulario">--->
+
+<!--el input q esta fuera del formulario no se actualiza xq no esta enviando los dato
+del formulario y xq no forma parte de ningun formulario
+pero con el form ya va a ser parte de ese formulario ---->
+
+<!--<h1 class="titulo grande rojo ">elemento a <b style="visibility: hidden;">modificar</b></h1>-->
+
+<div class="contenedor">
+	<h4>un h4 comun</h4>
+	<h2 class="h2">un h2 comun</h2>
+	<p>un simple parafo</p>
+</div>
+
+<div class="div">
+	div1
+	<div class="div">
+		div2
+		<div class="div-3"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="JS/dom.js"></script>
+
+</body>
+</html>
